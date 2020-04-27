@@ -1,6 +1,10 @@
 
+
+// if installed as npm package
+// const jael = require('jael
 const jael = require('../src/jael');
-jael.setPath('./');
+
+jael.setPath('../tests');
 
 const valid = {
   points: [

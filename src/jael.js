@@ -14,7 +14,7 @@ const geoTiff = require('geoTiff');
 // geoTIFF files must be stored and path set eg jael.setPath('./TIFFs') before calling the main function
 let TIFF_PATH;
 function setPath(path) { 
-  TIFF_PATH = path 
+  TIFF_PATH = path.charAt(path.length-1) === '/' ? path : path + '/';
 };
 
 
