@@ -42,35 +42,6 @@ Points are returned as an array in the requested order with an additional proper
 ]
 </pre>
 
-# Request Format
-Form of request: http://server/ups-and-downs/ (where 'server' is the url of the hosted server)
-
-# Post body format
-The POST data body should take the form:
-<p>
- <pre>
-{ "options": 
-  {
-    "interpolate": false,
-    "writeResultsToFile": true
-  },
-  "coordsArray":
-    [
-      {"lat":51.40462,"lng":-2.30217},
-      {"lat":51.4046,"lng":-2.30218},
-      {"lat":51.40459,"lng":-2.30219},
-      {"lat":51.40457,"lng":-2.3022}
-   ]
-  }
-}
-  </pre>
-<p>
-Where "options" is optional (options default to false).
-<ul>
-  <li>set <code>interpolate = true</code> if it is desired to interpolate (see note below) NOTE NOT YET SUPPORTED IN v3</li>
-  <li>set <code>writeResultsToFile = true</code> if it is desired to save a datafile with the results ('./results/result.out')</li>
-</ul>
-
 # Useful links
 <ul>
   <li>https://lpdaac.usgs.gov/products/astgtmv003/</li>
