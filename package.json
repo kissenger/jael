@@ -1,0 +1,30 @@
+{
+  "name": "jael",
+  "version": "1.0.0",
+  "description": "Just Another Elevation Library --> reads multi-point elevation data from NASA/METI ASTGTM_v003 elevations dataset. GeoTiff files must be downloaded as described in the readme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "elevations",
+    "ASTGTM",
+    "elevs",
+    "elev",
+    "altitude",
+    "DEM",
+    "ASTER",
+    "NASA",
+    "METI",
+    "GeoTiff", 
+    "Library",
+    "ASTGTM_v003"
+  ],
+  "author": "Gordon Taylor",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "geotiff": "^1.0.0-beta.10"
+  }
+}
