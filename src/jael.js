@@ -6,6 +6,8 @@
  **
  * Version history and change log
  * v1.0.0 - 07/04/2020 - Benchmark run 250 tests in 12710ms (approx 50.84ms per test)
+ * v1.0.1 - 07/04/2020 - Minor debugs to support npm deployment
+ * v1.0.2 - 07/04/2020 - Further debugging npm deployment + check for trailing '/' in supplied path
  */
 
 // geoTiff library does the actual work of reading the images https://geoTiffjs.github.io/geoTiff.js/
