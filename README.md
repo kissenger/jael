@@ -29,8 +29,8 @@ The request object is not mutated.
 <pre>
 const req = {
   points: [
-    {lat: 52.21940, lng: -2.94915},
-    {lat: 52.21932, lng: -2.94935}
+    {lat: 51.9283, lng: -3.1476},
+    {lat: 51.92002, lng: -3.14563}
   ]
 };
 </pre>
