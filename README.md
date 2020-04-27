@@ -23,9 +23,9 @@ Set path to the stored GeoTIFF files:
 jael.setPath('./TIFF/');  
 </pre>
 
-Formulate request object, which must be an object with property 'points'.  Any other properties will be ignored, and not returned in the results object.  Points is an array of lat/long coordinate objects in the form shown below.  Note that longitude is designated by 'lng' not 'lon'.  Any number of points can be included in the request.<br>
-Note that the ASTGTM_v003 dataset only covers up to +/-83degs latitude; providing above this will return an error.<br>
-Request object is not mutated.
+Formulate request object, which must be an object with property 'points'.  Any other properties will be ignored, and not returned in the results array.  Points is an array of lat/long coordinate objects in the form shown below.  Note that longitude is designated by 'lng' not 'lon'.  Any number of points can be included in the request.<br>
+Note that the ASTGTM_v003 dataset only covers up to +/-83degs latitude; providing lats above this will return an error.<br>
+The request object is not mutated.
 <pre>
 const req = {
   points: [
