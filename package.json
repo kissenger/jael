@@ -1,7 +1,8 @@
 {
   "name": "jael",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Just Another Elevation Library --> reads multi-point elevation data from NASA/METI ASTGTM_v003 elevations dataset. GeoTiff files must be downloaded as described in the readme.",
+  "repository": "https://github.com/kissenger/jael",
   "main": "src/jael.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
