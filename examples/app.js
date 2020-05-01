@@ -1,7 +1,7 @@
 
 
 // if installed as npm package
-// const jael = require('jael
+// const jael = require('jael')
 const jael = require('../src/jael');
 
 jael.setPath('../tests');

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "trailscape",
+  "private_key_id": "609eb4b652dc9815c30aa6348d921357406caad6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGtcGBd0rMQEuE\nSpxqH/qFZ3tALjpq3mIr3I1eIhUlAfaNIUeNeJ7Ads5W/SxbUViuzAVju1wbUvHf\nIzQ8+J7Id0Dqrrc8tmuoAsKQdxM2IlVTuXMpr9W2NuBykbdInOkBxfDfiGN/B9GR\nqZbM7HyMDDZG2WNm0Ea2BgQJwXc18d+JClbQcAO8Pc9Gm6pjJ+z/G8P51b4kJ92w\ncw4p3cxmdfXdMq/9VjPIrtTa24D3a7ehJ5FYvKdx5Q4QiwUtzohSXY9zRLXOR8Uu\n2daVWmJdZNWwAK5nPpe4oKadw9nASJMTA05F/ET1asrgZPA3HDckT5SmAfjO2b33\nU1WZFMnJAgMBAAECggEAAkFlIkLwP4gBy2084AP/qBS7/IchzN18FAcfeChvIMHI\nUoMEkMWkGKdokWpzftBaLza7321MnvdGrUuVH9WLGNeorhlAVXE1IN2yJ2lgl5JV\ncVs3JEudg4FVNBu1Dr8QMn/Ui3b8+R/FuE9qWaZcBgtr8MsuIog96zo/gLxYTe2N\nIFyYjDrlV/m9QZzb44qC2qfJnVYIpwioViYLDNoPp6lDFL0NGyFL7ItP5/QRxYUl\nPNSVZQiFu0Pw/J6uryim9hJp3I+9sFe2GtM0lW3hIoku+wJfvqK/q4yVqIj91sCG\npen59wcI4MFWtJbysN8Alszai+vp7MRV6Xyl3QwGsQKBgQD5oOCzJCGNwES+soPw\nfe6g8KSLiQnNbq/QXg5B68MQFb73IgwB9eQUOOeuYswInmTZuAc3g6AnpgvWAd9u\nPSMg7f5sraEFWYoK0w0dF9Tkqj4qSyVsp54vjIzMNrc4gj7khH3FSGIyPsLWGPCM\ndIZQiLe4UBwVr8LFGZaAoIczWQKBgQDLyCqz82Q+4SToBTu7Tm/sSL/T83oqwoaX\n/hOu+8aBC8kbuZmXYdwv4JIKSW/30n7BWuJp4Ydv0tgOhh2ynME3OIlQ+2Bot14H\n81TSZPiKw25q+QR3eYJyeuKGsP0Zx+n4DVa67uPLolHvChRn87tMEbJ/n4Px8Ye0\nJDk0k2mr8QKBgDmwzn1YOlDyQHD5/LgVwpJ7SuvcjeFmVUeIlS7y96+99tZSjgfd\n9goeZJzOxGyxfok6mKBh0R+Ypl+dKy/k/TtdBVHEhtQfr2F1CTDSEyeNmLRZjZqg\n2lQO3XNMqedrYnGZlR+E7PzDuG+Wb/Fl9KykDCGSkgsJBbBbi4bKkrRxAoGATvnh\niuI+LJxnCEDW+G2atNEw/vyykRXYwdknWb6cHPErXMJegyvbAPcgwjnZ2grLMzZ8\n3xoXuj/VmjNiGRHlU/hmR2tU3uCJ4bztV6joJic9iNm/YGpIIwP6/MZlIPO4enj4\n7vOcdxQOevzGEc+E/CMzsYBpy3+W3zrWrMigwJECgYEAxiSFdA/YnVOcgNbYrxlV\nHDXCAMMeoLlp/+uCB7v0Zei+1UpQBa59Ns1d8d+uWxHCKx2muVKXtEKDb4a9Fdgc\nhzbvCQI5z7ObJc2beUf2WgTeSFciwQYSD+c9fINxntaVRqnz10QDnq5cQWyUGyft\ndTWoXQ7oZvr24yFgVpjYXCE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "get-elevations@trailscape.iam.gserviceaccount.com",
+  "client_id": "101871905535040711690",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/get-elevations%40trailscape.iam.gserviceaccount.com"
+}

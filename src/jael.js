@@ -19,6 +19,18 @@ function setPath(path) {
   TIFF_PATH = path.charAt(path.length-1) === '/' ? path : path + '/';
 };
 
+// let TIFF_URL;
+// function setSource(source, value) {
+//   if (source === 'url') {
+
+
+//   } else if (source = 'path') {
+
+//   } else {
+//     return new Error('Invalid Source');
+//   }
+// }
+
 
 /**
  * Entry point - provided with an array of point objects will return a copy with 'elev' key in each object
@@ -47,7 +59,7 @@ async function getElevs(req) {
       return new Promise( (res, rej) => {
         const window = img.getWindow();
         const windowWidth = img.getWindowWidth();
-        getDataFromImage( img.fname, window)
+        getImgDataFromUrl( img.fname, window)
           .then( raster => {
     
             // for each pixel associated with the image, calculate the elevation 
@@ -243,7 +255,7 @@ function getFileName(lngO, latO) {
  * @param {Array} w pixel window to read from the requested image as [minX, minY, maxX, maxY]
  * @returns {Array} of numbers, being the elevations for each pixel in the supplied window
  */
-function getDataFromImage(fn, w) {
+function getImgDataFromFile(fn, w) {
 
   return new Promise( (res, rej) => {
 
@@ -256,6 +268,25 @@ function getDataFromImage(fn, w) {
 
 }
 
+
+/**
+ * Given the filename of the desired image, loads it, read it and returns the raster array
+ * @param {string} fn filename of desired image from getFileName
+ * @param {Array} w pixel window to read from the requested image as [minX, minY, maxX, maxY]
+ * @returns {Array} of numbers, being the elevations for each pixel in the supplied window
+ */
+function getImgDataFromUrl(url, w) {
+
+  return new Promise( (res, rej) => {
+
+    geoTiff.fromUrl('https://storage.cloud.google.com/trailscape-geotiffs/ASTGTMV003_N35E025_dem.tif')
+      .then( tiff => tiff.getImage() )
+      .then( img => img.readRasters({window: w}) )
+      .then( raster => res(raster[0]) )
+      .catch( e => rej(e) );
+    });
+
+}
 
 
 module.exports = {
