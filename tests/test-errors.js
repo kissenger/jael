@@ -23,7 +23,7 @@ var chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
 
 const jael = require('../src/jael');
-jael.setPath('./');
+// jael.setPath('./');    // set further down after initital error check
 
 const inputs = [
   {
@@ -72,8 +72,39 @@ const inputs = [
 /** 
  * Run the inputs through the function and formulate output object
  */
+ 
+
 
 before( function() {
+  this.timeout(30000);
+
+  inp = { points: [
+        {lat: 51.2194, lng: -4.94915},
+        {lat: 51.21932, lng: -3.94935} ]};
+
+  // map the promises in a way that catches the errors as well
+  return jael.getElevs(inp)
+    .then(r => output = {result: r})
+    .catch(e => output = {result: e});
+});
+
+it('wrapper it to wait for first "before" call', function() {
+  describe(`check for setPath() Error`, function() { 
+    
+    it('expect instance of Error', function() {
+      expect(output.result).to.satisfy(function(r) { return r instanceof Error});
+    });
+    
+    it('expect error message: Path to TIFFs not set or invalid', function() {
+      expect(output.result.message).to.contain('Path to TIFFs not set or invalid');
+    });
+
+  });
+});
+
+
+before( function() {
+  jael.setPath('./');
   this.timeout(30000);
 
   // map the promises in a way that catches the errors as well
@@ -88,7 +119,8 @@ before( function() {
  * Run the tests
  */
 
-it('wrapper it to wait for promise.all to complete', function() {
+
+it('wrapper it to wait for second "before" call', function() {
 
   for (let i = 0; i < inputs.length; i++) {
 

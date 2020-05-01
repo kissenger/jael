@@ -1,13 +1,13 @@
 
-
 /**
  * jeal.js - Just Another Elevations Library
  * Reads multi-point elevation data from NASA/METI ASTGTM_v003 elevations dataset. 
  **
  * Version history and change log
- * v1.0.0 - 07/04/2020 - Benchmark run 250 tests in 12710ms (approx 50.84ms per test)
- * v1.0.1 - 07/04/2020 - Minor debugs to support npm deployment
- * v1.0.2 - 07/04/2020 - Further debugging npm deployment + check for trailing '/' in supplied path
+ * v1.0.0 - 27/04/2020 - Benchmark run 250 tests in 12710ms (approx 50.84ms per test)
+ * v1.0.1 - 27/04/2020 - Minor debugs to support npm deployment
+ * v1.0.2 - 27/04/2020 - Further debugging npm deployment + check for trailing '/' in supplied path
+ * v1.0.3 - 01/05/2020 - Error check for TIFF_PATH being set via setPath prior 
  */
 
 // geoTiff library does the actual work of reading the images https://geoTiffjs.github.io/geoTiff.js/
@@ -33,6 +33,11 @@ async function getElevs(req) {
     // deep clone inputs
     const points = JSON.parse(JSON.stringify(req.points))
     
+    // check that the path has been set
+    if (!TIFF_PATH) {
+      throw new Error('Path to TIFFs not set or invalid');
+    };
+
     // preprocess includes a validity check on input points, so handle any error here
     let pre;
     try {
