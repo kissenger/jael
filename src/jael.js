@@ -3,15 +3,10 @@
  * jeal.js - Just Another Elevations Library
  * Reads multi-point elevation data from NASA/METI ASTGTM_v003 elevations dataset. 
  **
- * Version history and change log
- * v1.0.0 - 27/04/2020 - Benchmark run 250 tests in 12710ms (approx 50.84ms per test)
- * v1.0.1 - 27/04/2020 - Minor debugs to support npm deployment
- * v1.0.2 - 27/04/2020 - Further debugging npm deployment + check for trailing '/' in supplied path
- * v1.0.3 - 01/05/2020 - Error check for TIFF_PATH being set via setPath prior 
  */
 
 // geoTiff library does the actual work of reading the images https://geoTiffjs.github.io/geoTiff.js/
-const geoTiff = require('geoTiff');
+const geoTiff = require('geotiff');
 
 // geoTIFF files must be stored and path set eg jael.setPath('./TIFFs') before calling the main function
 let TIFF_PATH;
